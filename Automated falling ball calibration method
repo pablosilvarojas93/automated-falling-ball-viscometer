@@ -1,1 +1,16 @@
+Falling ball viscosimeter calibration method
+
+The main idea to calibrate this viscosimeter is use a solutions with a reference viscosity and measure the falling time of a 5mm steel ball 
+for each solutions. This solutions should have a Newtonian behavior in rehological terms. Here we use a glycerol/water solutions that it has 
+reference viscosity reported. The articule that you can use is "Segur, J. B., & Oberstar, H. E. (1951). Viscosity of glycerol and its aqueous 
+solutions. Industrial & Engineering Chemistry, 43(9), 2117-2120.". This is the link to download: 
+***https://pubs.acs.org/doi/pdf/10.1021/ie50501a040?casa_token=QbMKVxR4BfwAAAAA:uPH9H6RYm3FCkyU-LUcoJe2ZSHbxXbzH3uWDbQ7b9k5BN0F2V9DtUyjWCuQR3pa6tb4pcd_xNI1z6AvkPg***
+
+The solutions that I used were 0,10,20,30,40,50,60,65,70,75 and 80% in volume/volume of Glycerol/water. 
+Cautions: - You must do these solutions very well since the error of the viscometer depends on this.
+          - The temperature of this solutions are very important to know the reference viscosity. Is for this reason that
+             you must measure the temperature for each point that you measure.
+
+Method:
+
 
