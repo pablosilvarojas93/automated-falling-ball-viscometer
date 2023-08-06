@@ -13,4 +13,52 @@ Cautions: - You must do these solutions very well since the error of the viscome
 
 Method:
 
+First Step: 
+The materials that you need are pure glycerol, 10-15ml centrifuge tubes, destilled water and 10ml graduated pipette. The glycerol is
+very difficult to work because it has high viscosity. 
+- Use the centrifuge tubes to make the different glycerol/water solutions. remember that the glycerol/water solutions are in volume/volume 
+percentage. You must do the 10,20,30,40,50,60,65,70,75 and 80 %V/V glycerol/water solutions with a 10ml of final volume for each solutions.
+For example for 10 %V/V glycerol/water you must add 1ml of glycerol and fill with water until 10ml. Here are a help table to make this 
+solutions.
+
+          Glycerol volume [ml]         -          Final Volume (fill with water) [ml]        -          % V/V glycerol/water 
+                  1                    -                           10                        -                  10
+                  2                    -                           10                        -                  20
+                  3                    -                           10                        -                  30
+                  4                    -                           10                        -                  40
+                  5                    -                           10                        -                  50
+                  6                    -                           10                        -                  60
+                 6.5                   -                           10                        -                  65
+                  7                    -                           10                        -                  70
+                 7.5                   -                           10                        -                  75
+                  8                    -                           10                        -                  80
+
+Second Step:
+The main problem to do this calibration is the temperatura because in the article only there are reported viscosities at specific 
+temperatures (Segur, J. B., & Oberstar, H. E. (1951). Viscosity of glycerol and its aqueous solutions. Industrial & Engineering 
+Chemistry, 43(9), 2117-2120.). To solve this problem I made different plots take this reported viscosities at different temperatures.
+For this you must do different tables where x axes correspond to temperatura and y-axe correspond to viscosity for each %V/V of glycerol/
+water solutions. For example this is the table for a 10 %V/V of glycerol/water solution. HHere I only placed from 0 to 40ºC (I don't
+think you do the experiments at more than 40ºC) 
+
+                    Temperatura ºC          -          Viscosity [mPa·s]
+                          0                 -                2,44          
+                         10                 -                1,74  
+                         20                 -                1,31   
+                         30                 -                1,03
+                         40                 -                0,826  
+
+Well, with this table you must to generate a third order polynomial plot (3rd order its ok due the r^2 is near to 1). So this plot result 
+in this 3rd order polynomial function:
+
+y = -0,00002*(x^3)+0,0018*(x^2)-0,0859*(x)+2,4398
+
+where y axis correspond to a viscosity and x-axis correspond to a temperatura in Celsius grades.
+
+
+
+
+
+
+
 
