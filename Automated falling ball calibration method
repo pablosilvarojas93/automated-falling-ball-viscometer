@@ -11,9 +11,30 @@ Cautions: - You must do these solutions very well since the error of the viscome
           - The temperature of this solutions are very important to know the reference viscosity. Is for this reason that
              you must measure the temperature for each point that you measure.
 
+List of materials: - All print plastic models that I provide you in .stl format. Also I provide you the inventor files to modify this models
+                     to adjust it depend of the glass tube diammeter and steel ball diammeter
+                   - 5.2 inner diammeter glass tube (in my case) 
+                   - Steel ball with a 5mm diammeter
+                   - Silicone melting gun (and silicone of course)
+                   - Arduino Uno (can be a compatible to arduino Uno is not necesary a original Arduino Uno)
+                   - Electronic components like 1 and 10 Kohm resistance, White LEDs, and TEPT5700 light sensor or similar (you should use 
+                    a IR emisor and IR sensor instead a white LED and TEPT5700 phototransistor)
+                   - Wires to make the electronic connections
+                   - 10-15ml centrifuge tubes
+                   - Graduated pipettes
+                   - Pure glycerol
+                   - Destilled water 
+                   - 50-100ml Glass beaker
+          *** You can use a fast cammera or cell fast cammera instead a electronic connections to measure the falling time of ball ***
+
+                                        
+                   
+
+
 Method:
 
-First Step: 
+***** First Step: 
+
 The materials that you need are pure glycerol, 10-15ml centrifuge tubes, destilled water and 10ml graduated pipette. The glycerol is
 very difficult to work because it has high viscosity. 
 - Use the centrifuge tubes to make the different glycerol/water solutions. remember that the glycerol/water solutions are in volume/volume 
@@ -33,7 +54,8 @@ solutions.
                  7.5                   -                           10                        -                  75
                   8                    -                           10                        -                  80
 
-Second Step:
+***** Second Step:
+
 The main problem to do this calibration is the temperatura because in the article only there are reported viscosities at specific 
 temperatures (Segur, J. B., & Oberstar, H. E. (1951). Viscosity of glycerol and its aqueous solutions. Industrial & Engineering 
 Chemistry, 43(9), 2117-2120.). To solve this problem I made different plots take this reported viscosities at different temperatures.
@@ -54,6 +76,17 @@ in this 3rd order polynomial function:
 y = -0,00002*(x^3)+0,0018*(x^2)-0,0859*(x)+2,4398
 
 where y axis correspond to a viscosity and x-axis correspond to a temperatura in Celsius grades.
+
+
+***** Third Step:
+
+Ensamble the electronic parts and plastic parts follow the diagrams that it are in this respository. Also, you must upload the code in the Arduino.
+
+
+***** Fourth step: 
+
+Here in this step you should measure the falling ball times with the prototype. I recomend you that you do 5 times for each solutions. 
+
 
 
 
