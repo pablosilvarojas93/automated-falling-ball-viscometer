@@ -1,1 +1,1 @@
-# automated-falling-ball-viscometer
+Automated falling ball viscometer
