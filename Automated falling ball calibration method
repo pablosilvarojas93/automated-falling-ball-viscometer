@@ -22,9 +22,12 @@ List of materials: - All print plastic models that I provide you in .stl format.
                    - Wires to make the electronic connections
                    - 10-15ml centrifuge tubes
                    - Graduated pipettes
+                   - Plastic Pipette or another
                    - Pure glycerol
                    - Destilled water 
                    - 50-100ml Glass beaker
+                   - Alcohol thermometer or another that can introduce in water
+                   - tweezers
           *** You can use a fast cammera or cell fast cammera instead a electronic connections to measure the falling time of ball ***
 
                                         
@@ -40,9 +43,10 @@ very difficult to work because it has high viscosity.
 - Use the centrifuge tubes to make the different glycerol/water solutions. remember that the glycerol/water solutions are in volume/volume 
 percentage. You must do the 10,20,30,40,50,60,65,70,75 and 80 %V/V glycerol/water solutions with a 10ml of final volume for each solutions.
 For example for 10 %V/V glycerol/water you must add 1ml of glycerol and fill with water until 10ml. Here are a help table to make this 
-solutions.
+solutions. Remmember that this solutions must be well homogeneus. You can use a shaker to homogenize solutions.
 
           Glycerol volume [ml]         -          Final Volume (fill with water) [ml]        -          % V/V glycerol/water 
+                  0                    -                           10                        -                  0
                   1                    -                           10                        -                  10
                   2                    -                           10                        -                  20
                   3                    -                           10                        -                  30
@@ -53,6 +57,10 @@ solutions.
                   7                    -                           10                        -                  70
                  7.5                   -                           10                        -                  75
                   8                    -                           10                        -                  80
+
+For solutions major of 50% V/V the gass bubbles are very difficult to remove. If you have a vacuum systema in your laboratory will be perfect
+to remove this bubbles. If you dont have the vacuum system I advise you after making the solutions let them rest at least until all the bubbles
+are gone.
 
 ***** Second Step:
 
@@ -75,17 +83,51 @@ in this 3rd order polynomial function:
 
 y = -0,00002*(x^3)+0,0018*(x^2)-0,0859*(x)+2,4398
 
-where y axis correspond to a viscosity and x-axis correspond to a temperatura in Celsius grades.
+where y axis correspond to a viscosity and x-axis correspond to a temperature in Celsius grades.
 
 
 ***** Third Step:
 
 Ensamble the electronic parts and plastic parts follow the diagrams that it are in this respository. Also, you must upload the code in the Arduino.
+Cover one side of the tube with a centimeter of hot silicone.
 
 
 ***** Fourth step: 
 
-Here in this step you should measure the falling ball times with the prototype. I recomend you that you do 5 times for each solutions. 
+Here in this step you should measure the falling ball times with the prototype. I recomend you that you do at least 5 times for each solutions
+(In this case you have at least n=5 and more statistics). The experiment is very easy and fast. Before to start the calibration experiment, add 
+destilled water in a 50-100ml Glass beaker and put the termometer inside. It is very important due with this water the temperature of the solutions 
+is equilibrated before each measurement and ensure that the measurements are carried out at room temperature. Wait until that the thermometer stops
+and report this temperature. Now, Add the first solution to a glass tube (can be the 10 %V/V) with help of a plastic pipette until 4-5 milimeters 
+from the top. After that, place the glass tube with the solution to be measured inside the glass with water to equilibrate the temperature. 
+Be very careful with water, since it should not enter the glass. If this were the case, discard this solution and replace the content with the 
+10% V/V stock solution. After stabilizing the temperature solution (about 1 minute), put the glass tube into the falling ball viscometer 
+prototype. After this step, try to have everything well connected and the prototype powered. Open the serial monitor in Arduino software.
+Then with help of tweezers, take the steel ball and very carefully place it just above the tube and release it. in the serial monitor it should 
+have given you the total time and the speed of descent of the ball. Then remove the glass tube with the ball and remove the balltilting the tube.
+Try not to spill as much liquid from the solution. Fill the glass tube with the stock solution until 4-5 mm from the top and place it into the 
+glass beaker with water to balance the temperature solution (1 minute). Now measure again using the prototype. You must follow this same procedure
+for all solutions. Try to report the temperature reading of the thermometer and report the times of fall of the ball.
+
+***** Fifth Step:
+
+Now you have all falling ball times reported with a correspond temperatura. You should have 55 measure point (5 for each solutions from 0 to
+80 %V/V glycerol/water. Then when the polynomials functions obtained in second step you can estimate the viscosity for each solutions that you
+used with the temperature that you reported for each measure point. Now, you must plot the viscosity as a function of falling ball times
+(viscosity [mPa·s] is a y-axis and falling ball time [s] is the x-axis). The graph should give you a linear behavour with a r^2 similar to 1
+(This never happend dont worry, but the r^2 should be 0,97 or 0,98. If you got a r^2 0,99 or more congratulations). So with this linear equation
+you can estimate any viscosity of any fluid that is in the range. 
+
+Notes: -  This method provide to estimate a viscosity but for fluid with less viscosity (less than 20 mPa·s) the error is bigger. If this is the 
+          case I recommended you make a calibration curve with different solutions of ethylenglycol/water due the viscosity range is between 1mPa·s 
+          (pure water at 20ºC) to 20 mPa·s (at 20ºC) for 100% Ethylenglycol/water. 
+       -  If you unknown fluid has a high viscosity I recommended you calibrate this viscometer with high percentajes of glycerol/water solutions 
+          (bigger than 60 %V/V) until 100 %V/V glycerol/water.  
+
+This is all. If you have any questions contact me at pablo.silva.r01@mail.pucv.cl. Soon I will have more open hardware devices to make more cheap 
+the investigations. I will be very interested in collaborating with anything. 
+
+
 
 
 
